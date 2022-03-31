@@ -1,21 +1,23 @@
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
 class Solution {
 public:
-    vector<int> buildArray(vector<int>& nums) {
+    vector<int> getConcatenation(vector<int>& nums) {
         vector<int> ans;
-        for(unsigned int i=0;i<nums.size();i++){
-            ans.push_back(nums[nums[i]]);
+        while(ans.size()!=2*nums.size()){
+            for(unsigned int i=0;i<nums.size();i++){
+            ans.push_back(nums[i]);
+            }
         }
-
-        return ans;
+    return ans;
     }
 };
 
 int main()
 {
-
+//    cout << "Hello World!" << endl;
     return 0;
 }
